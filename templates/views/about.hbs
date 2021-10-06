@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>head}}
+   <style>
+    @media (max-width:700px){
+    .lo{
+        margin: auto;
+        {{!-- background-color:pink; --}}
+    }
+    .lo img{
+        filter: drop-shadow(10px,5px,6px,6px,rgba(0,0,0,0.8));
+        width: 420px;
+        margin-bottom: 80px;
+    }
+}
+   </style>
+</head>
+<body>
+    {{>header}}
+    <div class="container-fluid" style="height:500px;">
+        <div class="row">
+            <div class="col-lg-10 m-auto main-body">
+                <div class="row low" style="height: 500px;">
+                    <div class="col-lg-6 col-sm-12 m-auto lo" style="height:500px;display: flex;flex-direction:column;justify-content:center;">
+                      <p>Welcome to the weather app</p>
+                        <h1 style="text-transform: capitalize;">I am a<span style="color: #156984;">Web Designer</span> and a node js developer </h1>
+                        <a class="btns" href="/weather">Check now</a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 m-auto lo" style="height:500px;">
+                        <img src="https://www.vippng.com/png/detail/356-3560372_girl-silhouette-black-shadow-illustration.png" alt="" height="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>

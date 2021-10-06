@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>head}}
+   <link rel="stylesheet" href="css/weather.css">
+
+</head>
+<body>
+    {{>header}}
+    <div class="container-fluid" style="height:500px;">
+        <div class="row">
+            <div class="col-lg-10 main-weather" style="margin:20px auto;">
+                <div class="row m-auto">
+                    <div class="col-lg-10 col-sm-12 m-auto inp">
+                        <input type="text" placeholder="Enter City">
+                        <button id="search">Search</button>
+                    </div>
+                </div>
+                <div class="row m-auto">
+                    <div class="col-lg-4 box" style="margin: 20px auto;padding:0px">
+                        <div class="time">
+                            <p class="day">Tuesday</p>
+                            <p class="dt">date</p>
+                        </div>
+                        <div class="output">
+                            <p id="name"></p>
+                            <div class="datahide"><span id="temp" style="font-size: 60px;">0</span><sup style="font-size: 40px;">o</sup>c <span id="icon" style="font-size: 80px;margin-left:15px"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="js/index.js"></script>
+
+</body>
+</html>

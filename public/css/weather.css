@@ -1,0 +1,61 @@
+.inp{
+    display: flex;
+    background-color: #1e272e;
+    border-radius: 40px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    color: white;
+    margin-top: 20px;
+}
+#search{
+    width: 150px;
+    height: 40px;
+    /* margin: 2px; */
+   margin-right: -10px;
+    background-color:#156984;
+    color: white;
+    border-radius: 40px;
+}
+.inp input{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+.inp input:focus{
+    outline: none;
+    border: none;
+}
+.box{
+    height: 300px;
+    background-color: #1e272e;
+    color: white;
+    margin-top: 20px;
+}
+.row{
+    margin: 0px;
+}
+.box .time{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    margin: 0px;
+    background-color: steelblue;
+}
+.output{
+    padding: 5px;
+}
+.output p{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.output div{
+    color: white;
+    font-size: 60px;
+}
+

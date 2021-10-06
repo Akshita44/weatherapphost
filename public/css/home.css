@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+}
+.main-header{
+    background-color: #1e272e;
+}
+.nav-link{
+    color: white;
+}
+.navbar-brand{
+    color: white;
+    margin: 0;
+    padding-left:0px;
+    /* background-color: blue; */
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar{
+    /* background-color: pink; */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.fa-snowflake{
+    color:#0056B3;
+    margin:0px 5px;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.carousel{
+    margin-left: auto;
+}
+.rows{
+    height: 500px;
+    /* background-color: antiquewhite; */
+    margin-bottom: 30px;
+}
+.main-body{
+    display: flex;
+}
+.foot{
+    position: fixed;
+    left: 0px;
+    bottom: 0px; 
+    color: white;
+    height: 100px;
+    width: 100vw;
+    border-radius: 0%;
+}
+.btns{
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+   border-radius: 40px;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    padding-top: 7px;
+    box-shadow: 0 8px 6px -6px #156984;
+}
+.btns:hover{
+    text-decoration: none;
+}
+.btns:focus{
+    outline: none;
+    border: none;
+}
+.main-body{
+    margin-bottom: 20px;
+}
+@media(max-width:700px){
+    .main-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-inner{
+        /* height: 300px !important; */
+        margin-bottom: 120px;
+    }
+    .lo1{
+        /* margin-bottom: 200px; */
+    }
+    
+
+}
