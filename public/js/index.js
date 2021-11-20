@@ -22,7 +22,7 @@ hide.style.display="none";
     }
     else{
         try{
-    const data=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=2feef37cfd6356ba4fb933d746132052`);
+    const data=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=2feef37cfd6356ba4fb933d746132052`);
     const datajson=await data.json();
     name.innerText=datajson.name;
     temp.innerText=datajson.main.temp;
